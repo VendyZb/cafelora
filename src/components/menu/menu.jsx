@@ -1,5 +1,5 @@
 import './menu.css';
-import { Drink } from '../Drink/index.jsx';
+import { Drink } from '../drinks/drinks.jsx';
 
 export const Menu = () => {
   return `
@@ -12,21 +12,21 @@ export const Menu = () => {
 
         <div class="drinks-list">
           <Drink
-  id={0}
-  name="Romano"
-  ordered={false}
-  image="http://localhost:4000/assets/cups/romano.png"
-  layers={[
-    {
-      color: '#fbdf5b',
-      label: 'citrón',
-    },
-    {
-      color: '#613916',
-      label: 'espresso',
-    },
-  ]}
-/>
+            id={0}
+            name="Romano"
+            ordered={false}
+            image="http://localhost:4000/assets/cups/romano.png"
+            layers={[
+             {
+              color: '#fbdf5b',
+              label: 'citrón',
+            },
+           {
+              color: '#613916',
+              label: 'espresso',
+            },
+              ]}
+          />
         </div>
 
         <div class="order-detail">
