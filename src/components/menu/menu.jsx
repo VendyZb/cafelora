@@ -1,5 +1,43 @@
 import './menu.css';
+import { Drink } from '../Drink/index.jsx';
 
+export const Menu = () => {
+  return `
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2>Naše nabídka</h2>
+        <p class="menu-intro">
+          Vyberte si z našeho interaktivního menu a nemusíte čekat na obsluhu
+        </p>
+
+        <div class="drinks-list">
+          <Drink
+  id={0}
+  name="Romano"
+  ordered={false}
+  image="http://localhost:4000/assets/cups/romano.png"
+  layers={[
+    {
+      color: '#fbdf5b',
+      label: 'citrón',
+    },
+    {
+      color: '#613916',
+      label: 'espresso',
+    },
+  ]}
+/>
+        </div>
+
+        <div class="order-detail">
+          <a href="/order.html">Detail objednávky</a>
+        </div>
+      </div>
+    </section>
+  `;
+};
+
+/*
 export const Menu = () => {
   return (
     <section className="menu" id="menu">
@@ -78,3 +116,4 @@ export const Menu = () => {
     </section>
   );
 };
+*/
